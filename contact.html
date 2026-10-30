@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contactez l'Atelier Bois Clair pour un devis gratuit.">
+  <title>Contact | Atelier Bois Clair</title>
+  <!-- Bootstrap 5 + polices Google -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS personnalisé -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#contenu">Aller au contenu</a>
+
+  <!-- ===== BARRE DE NAVIGATION ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Atelier <span>Bois Clair</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Réalisations</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-bois btn-sm" href="contact.html">Demander un devis</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenu">
+
+    <header class="page-head"><div class="container"><h1>Contact</h1><p class="lead">Parlez-nous de votre projet. Réponse sous 48 h.</p></div></header>
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- ===== FORMULAIRE (validé en JavaScript) ===== -->
+          <div class="col-lg-7">
+            <h2 class="section-title">Écrivez-nous</h2>
+            <form id="formContact" novalidate>
+              <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" name="nom" required minlength="2" autocomplete="name">
+                <div class="invalid-feedback">Indiquez votre nom (2 caractères minimum).</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Adresse e-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+                <div class="invalid-feedback">Indiquez une adresse e-mail valide, par exemple nom@exemple.com.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required minlength="10"></textarea>
+                <div class="invalid-feedback">Décrivez votre projet en 10 caractères minimum.</div>
+              </div>
+              <button type="submit" class="btn btn-bois">Envoyer le message</button>
+              <div id="formSucces" class="alert alert-success mt-3 d-none" role="status">Message envoyé. Nous vous répondons sous 48 h.</div>
+            </form>
+          </div>
+
+          <!-- ===== COORDONNÉES ===== -->
+          <div class="col-lg-5">
+            <h2 class="section-title">Coordonnées</h2>
+            <dl class="coord">
+              <dt>Adresse</dt><dd>Rue des Menuisiers, Akpakpa, Cotonou, Bénin</dd>
+              <dt>Téléphone</dt><dd><a href="tel:+22901970000000">+229 01 97 00 00 00</a></dd>
+              <dt>E-mail</dt><dd><a href="mailto:contact@atelierboisclair.bj">contact@atelierboisclair.bj</a></dd>
+              <dt>Horaires</dt><dd>Lundi au samedi, 8 h à 18 h</dd>
+            </dl>
+            <p class="small">Une question rapide ? Posez-la à Noyer, l'assistant en bas à droite de l'écran.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <p class="footer-brand mb-2">Atelier Bois Clair</p>
+          <p class="mb-0">Menuiserie sur mesure en bois local, fabriquée à la main à Cotonou.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="h6">Pages</h2>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="services.html">Réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2 class="h6">Atelier</h2>
+          <address class="mb-0">Rue des Menuisiers, Akpakpa<br>Cotonou, Bénin<br>+229 01 97 00 00 00<br>contact@atelierboisclair.bj</address>
+        </div>
+      </div>
+      <p class="small mt-4 mb-0 footer-copy">© 2026 Atelier Bois Clair</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

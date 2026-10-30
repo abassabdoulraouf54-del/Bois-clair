@@ -1,0 +1,13 @@
+{
+  "name": "atelier-bois-clair",
+  "version": "1.0.0",
+  "description": "Site vitrine de l'Atelier Bois Clair (projet pédagogique)",
+  "main": "js/server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2"
+  }
+}
